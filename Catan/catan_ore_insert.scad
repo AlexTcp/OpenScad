@@ -6,7 +6,7 @@ TILE_L = 25;
 TILE_COUNT = 6;
 
 BOX_W = 64;
-BOX_L = 91.5;
+BOX_L = 91.5;//122; //83
 BOX_H = 32;
 
 difference() {
@@ -19,6 +19,7 @@ difference() {
         rotate([0, 90, 90]) 
             cylinder(h = 200, r = 33, $fn=6);
 
+
     tile_slot(1);
     tile_slot(1 + TILE_L);
 
@@ -27,6 +28,9 @@ difference() {
 
     tile_slot(12 + (TILE_L * 2));
     tile_slot(12 + (TILE_L * 3));
+
+    // tile_slot(17.5 + (TILE_L * 3));
+    // tile_slot(17.5 + (TILE_L * 4));
 }
 
 module tile_slot(y) {

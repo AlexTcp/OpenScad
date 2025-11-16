@@ -2,11 +2,11 @@
 $fn=200;
 THICK = 1;
 
-TILE_L = 23;
+TILE_L = 22;
 TILE_COUNT = 16;
 
 BOX_W = 64;
-BOX_L = 142.5;
+BOX_L = 193;
 BOX_H = 32;
 
 difference() {
@@ -34,14 +34,11 @@ difference() {
     tile_slot(23 + (TILE_L * 4));
     tile_slot(23 + (TILE_L * 5));
 
-    // tile_slot(38.5 + (TILE_L * 5));
-    // tile_slot(38.5 + (TILE_L * 6));
+    tile_slot(28.5 + (TILE_L * 5));
+    tile_slot(28.5 + (TILE_L * 6));
 
-    // tile_slot(46 + (TILE_L * 6));
-    // tile_slot(46 + (TILE_L * 7));
-
-    // tile_slot(53.5 + (TILE_L * 7));
-    // tile_slot(53.5 + (TILE_L * 8));
+    tile_slot(34 + (TILE_L * 6));
+    tile_slot(34 + (TILE_L * 7));
 }
 
 module tile_slot(y) {

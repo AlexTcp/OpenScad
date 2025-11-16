@@ -2,7 +2,7 @@ $fn=200;
 
 THICK = 5;
 
-BOX_W = 232;
+BOX_W = 288;
 BOX_L = 288; //320;
 BOX_H = 5;
 

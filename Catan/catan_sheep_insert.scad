@@ -6,7 +6,7 @@ TILE_L = 19;
 TILE_COUNT = 6;
 
 BOX_W = 64;
-BOX_L = 17 + (TILE_L * 3);
+BOX_L = 73.5;//122.5; //74
 BOX_H = 32;
 
 difference() {
@@ -27,6 +27,12 @@ difference() {
 
     tile_slot(12 + (TILE_L * 2));
     tile_slot(12 + (TILE_L * 3));
+
+    // tile_slot(17.5 + (TILE_L * 3));
+    // tile_slot(17.5 + (TILE_L * 4));
+
+    // tile_slot(23 + (TILE_L * 4));
+    // tile_slot(23 + (TILE_L * 5));
 }
 
 module tile_slot(y) {
